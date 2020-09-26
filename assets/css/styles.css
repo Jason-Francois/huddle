@@ -1,0 +1,223 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  background: #ebe4e4;
+  color: #3b3a3a;
+  line-height: 1.3;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: space-center;
+      -ms-flex-pack: space-center;
+          justify-content: space-center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+body {
+  background: #674baf;
+  height: 100vh;
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/images/bg-desktop.svg");
+  background-size: center center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.container {
+  z-index: 2;
+  margin: 0px 5rem;
+  margin-bottom: 100px;
+}
+
+.container .logo {
+  margin-top: 60px;
+  margin-bottom: 110px;
+}
+
+.container .mainBox {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: white;
+}
+
+.container .mainBox .main-img {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  margin-right: 60px;
+}
+
+.container .mainBox .main-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .mainBox .main-text {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin-top: 29px;
+}
+
+.container .mainBox .main-text .main-tag h1 {
+  font-family: "Poppins", "sans-serif";
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 0.03rem;
+}
+
+.container .mainBox .main-text .description {
+  color: #f5eeee;
+  line-height: 1.5rem;
+  letter-spacing: 0.05rem;
+  font-weight: 400;
+}
+
+.container .mainBox .main-text .register {
+  display: block;
+  background: white;
+  color: #674baf;
+  padding: 20px 65px;
+  border: none;
+  border-radius: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 0.4);
+}
+
+.container .logoBox {
+  margin-top: 15px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.container .logoBox .socials #facebook {
+  width: 46px;
+}
+
+.container .logoBox .socials .social {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-size: 25px;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-right: 20px;
+}
+
+@media (max-width: 475px) {
+  .bg {
+    background-image: url("/images/bg-mobile.svg");
+  }
+  .container {
+    margin: 0px 40px;
+  }
+  .container .logo {
+    margin-bottom: 70px;
+    width: 250px;
+    height: 50px;
+    left: -37px;
+    position: relative;
+  }
+  .container .logo img {
+    width: 100%;
+    height: 100%;
+  }
+  .container .mainBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .mainBox .main-img {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 0;
+  }
+  .container .mainBox .main-text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .container .mainBox .main-text .main-tag h1 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .container .mainBox .main-text .description {
+    padding: 0 10px;
+  }
+  .container .mainBox .main-text .register {
+    margin: 0 auto;
+  }
+  .container .logoBox {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .logoBox .socials {
+    margin-left: 20px;
+  }
+  .container .logoBox .socials #facebook {
+    width: 28px;
+  }
+  .container .logoBox .socials .social {
+    font-size: 12px;
+    padding: 7px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

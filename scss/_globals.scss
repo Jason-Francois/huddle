@@ -1,0 +1,35 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  background: #ebe4e4;
+  color: rgb(59, 58, 58);
+  line-height: 1.3;
+}
+
+.flex {
+  display: flex;
+  &-jc-sb {
+    justify-content: space-between;
+  }
+  &-jc-c {
+    justify-content: space-center;
+  }
+  &-ai-c {
+    align-items: center;
+  }
+}
+.grid {
+  display: grid;
+}
