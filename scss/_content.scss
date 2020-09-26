@@ -67,8 +67,10 @@ body {
     }
   }
   .logoBox {
+    flex-direction: row;
+    width: 100%;
     margin-top: 15px;
-    justify-content: end;
+    justify-content: flex-end;
     .socials {
       #facebook {
         width: 46px;
@@ -114,8 +116,6 @@ body {
           h1 {
             font-size: 24px;
             font-weight: 400;
-            span {
-            }
           }
         }
         .description {
@@ -127,6 +127,7 @@ body {
       }
     }
     .logoBox {
+      flex-direction: row;
       justify-content: center;
       align-items: center;
       .socials {
